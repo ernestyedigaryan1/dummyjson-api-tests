@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "types": ["node"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "baseUrl": "./",
+        "paths": {
+            "@api/*": ["src/api/*"],
+            "@env": ["env.config.ts"],
+            "@utils/*": ["src/utils/*"],
+            "@schemas/*": ["src/schemas/*"],
+            "@test-data/*": ["src/test-data/*"],
+            "@types/*": ["src/types/*"],
+            "@fixtures/*": ["fixtures/*"]
+        }
+    },
+    "include": [
+        "tests/**/*.ts",
+        "*.ts",
+        "playwright.config.ts",
+        "fixtures/**/*.ts",
+        "src/api/**/*.ts",
+        "src/schemas/*.ts",
+        "src/test-data/*.ts"
+    ],
+    "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,33 @@
+{
+    "name": "dummyjson-api-tests",
+    "version": "1.0.0",
+    "description": "API test suite for DummyJSON Products endpoints using Playwright and TypeScript",
+    "license": "ISC",
+    "author": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "playwright test",
+        "lint": "eslint . *.ts",
+        "lint:fix": "eslint . --fix",
+        "prettier": "prettier . --check",
+        "prettier:fix": "prettier --write .",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@playwright/test": "^1.58.2",
+        "@types/node": "^25.2.3",
+        "@typescript-eslint/parser": "^8.55.0",
+        "eslint": "^10.0.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-playwright": "^2.5.1",
+        "eslint-plugin-prettier": "^5.5.5",
+        "prettier": "^3.8.1",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.55.0",
+        "dotenv": "^17.2.1",
+        "husky": "^9.1.7",
+        "allure-playwright": "^3.4.1"
+    }
+}
