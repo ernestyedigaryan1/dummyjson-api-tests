@@ -29,18 +29,3 @@ jobs:
 
       - name: Run tests
         run: npm test
-      
-      - name: Install Allure CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y openjdk-11-jre
-          npm install -g allure-commandline
-          
-      - name: Generate Allure report
-        run: allure generate allure-results --clean -o allure-report
-        
-      - name: Generate Allure report
-        uses: afiore/action-allure-report@v0.1.0
-        with:
-          results-dir: allure-results
-          report-dir: allure-report
